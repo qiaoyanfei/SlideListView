@@ -1,0 +1,41 @@
+<resources>
+
+    <dimen name="textsize_s1">30dp</dimen>
+    <dimen name="textsize_s2">20dp</dimen>
+    <dimen name="textsize_s3">16dp</dimen>
+    <dimen name="textsize_s4">14dp</dimen>
+    <dimen name="textsize_s5">12dp</dimen>
+    <dimen name="textsize_s6">11dp</dimen>
+    <dimen name="textsize_s7">24dp</dimen>
+    <dimen name="textsize_s8">18dp</dimen>
+    <dimen name="textsize_s9">15dp</dimen>
+
+    <dimen name="wave_size_01">160dp</dimen>
+	<dimen name="wave_size_02">190dp</dimen>
+	
+	<!-- 42px -->
+	<dimen name="text_sp_s4">15.75sp</dimen>
+	<!-- 36px -->
+	<dimen name="text_sp_s5">13.5sp</dimen>
+	<!-- 48px -->
+	<dimen name="text_sp_s3">16.86sp</dimen>
+	<!-- 33px -->
+	<dimen name="text_sp_s6">10.5sp</dimen>
+	<dimen name="im_item_one_line">35.33dp</dimen>
+	
+	
+	<dimen name="msg_height1">70dp</dimen>
+	<dimen name="msg_height2">80dp</dimen>
+	
+	<dimen name="height">33.33dp</dimen>
+	
+	<dimen name="edit_minwidth">50dp</dimen>
+	<dimen name="edit_padding">6dp</dimen>
+	<dimen name="edit_card_width">64dp</dimen>
+	<dimen name="edit_margin">3dp</dimen>
+	<dimen name="edit_card_height">22dp</dimen>
+	
+	<!-- slide delete -->
+	<dimen name="slide_delete_width">63dp</dimen>
+	<dimen name="slide_delete_negative">-64dp</dimen>
+</resources>

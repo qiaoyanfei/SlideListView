@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    tools:context="com.qiao.slidelistview.MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    
+        <com.qiao.slidelistview.SlideListView
+        android:id="@+id/lv_dialing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#000000"
+        android:divider="@drawable/line"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:layout_marginBottom="50dp" />
+        
+         <RelativeLayout
+        android:id="@+id/re_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp">
+
+        <ImageView
+            android:id="@+id/image_no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent"
+            android:src="@drawable/no_dialing_record" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_tip_no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_no_record"
+            android:layout_marginTop="14dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/no_dialing_record"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:shadowColor="@color/textcolor_white_a"
+            android:typeface="sans"
+            android:textColor="#888"
+            android:textSize="@dimen/textsize_s3" />
+    </RelativeLayout>
+
+</RelativeLayout>

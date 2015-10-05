@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/background_bg1"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/holder_left"
+        android:layout_width="@dimen/slide_delete_width"
+        android:layout_height="65dp"
+        android:layout_marginLeft="@dimen/slide_delete_negative"
+        android:background="@drawable/selector_delete"
+        android:clickable="true" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@drawable/selector_listview"
+        android:layout_marginRight="@dimen/slide_delete_negative">
+
+        <ImageView
+            android:id="@+id/dialing_cancel_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/holder_right"
+            android:src="@drawable/dial_cancel_delete_n"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/re_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_name_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_phone_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                    android:maxWidth="200dp"
+                    android:singleLine="true"
+                    android:text="18710088164"
+                    android:textColor="@color/textcolor_black_b1"
+                    android:textSize="@dimen/textsize_s3"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="(2)"
+                    android:textColor="@color/textcolor_black_b1"
+                    android:textSize="@dimen/textsize_s3"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_num_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ll_name_num"
+                android:layout_below="@id/ll_name_num"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13352565256"
+                    android:textColor="@color/textcolor_black_b3"
+                    android:textSize="@dimen/textsize_s5"
+                    android:typeface="sans"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_location"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:maxLines="1"
+                        android:text="北京"
+                        android:textColor="@color/textcolor_black_b3"
+                        android:textSize="@dimen/textsize_s5"
+                        android:typeface="sans" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="1dp"
+                        android:layout_height="11dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/textcolor_black_b3" />
+
+                    <TextView
+                        android:id="@+id/tv_operator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="移动"
+                        android:textColor="@color/textcolor_black_b3"
+                        android:textSize="@dimen/textsize_s5"
+                        android:typeface="sans" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btn_call"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/holder_right"
+            android:background="@null"
+            android:src="@drawable/selector_contact_icon_call" />
+
+        <CheckBox
+            android:id="@+id/cb_dail_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:layout_toLeftOf="@id/holder_right"
+            android:button="@drawable/selector_check"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/im_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/line_vertical" />
+<!--         <ImageView
+            android:id="@+id/im_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_call"
+            android:background="@drawable/line_vertical" /> -->
+
+        <RelativeLayout
+            android:id="@+id/re_tel_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/im_line" >
+
+            <ImageView
+                android:id="@+id/im_tel_state"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/tel_state_callout" />
+
+            <TextView
+                android:id="@+id/tv_tel_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/im_tel_state"
+                android:layout_marginTop="5dp"
+                android:text="03-13 09:50"
+                android:textColor="@color/textcolor_black_b2"
+                android:textSize="@dimen/textsize_s5"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+<!--         <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:layout_toLeftOf="@id/holder_right"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line" >
+        </View> -->
+
+        <RelativeLayout
+            android:id="@+id/holder_right"
+            android:layout_width="@dimen/slide_delete_width"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_delete"
+            android:clickable="true" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
